@@ -1,6 +1,9 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost/HospitalAPI", { useNewUrlParser: true });
+mongoose.connect(
+  "mongodb+srv://abhay:abhay123@cluster0.pbi4d.mongodb.net/HospitalAPI",
+  { useNewUrlParser: true }
+);
 
 const db = mongoose.connection;
 
